@@ -10,10 +10,6 @@ tester.run("general-novel-style", rule, {
         "「こんにちは、世界」",
         "[こんにちは、世界。](https://example.com)",
         "[こんにちは、世界、](https://example.com)",
-        {
-            text: "#1234",
-            options: {"chars_leading_paragraph": "#"}
-        },
         "「これはペンですか？　いや、ペンであるはずがない！」",
         "「…………なん……だと……」",
         "『一体いつから――――ペンであると錯覚していた――？』",

@@ -146,7 +146,7 @@ function reporter(context, options = {}) {
                     });
                 }
 
-                if (typeof maxArabicNumeralDigits == "number" && !/#[0-9]/.test(text)) {
+                if (typeof maxArabicNumeralDigits == "number") {
                     reportMatches({
                         pattern: /([0-9０１２３４５６７８９]+)(?:[\.．]([0-9０１２３４５６７８９]+))?/g,
                         test:    (s, a, b) => a.length > maxArabicNumeralDigits || (b && b.length > maxArabicNumeralDigits),
