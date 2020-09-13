@@ -1,10 +1,12 @@
-# textlint-rule-general-novel-style-ja
+# textlint-rule-general-novel-style-ja-markdown
 
 [![textlint rule](https://img.shields.io/badge/textlint-fixable-green.svg?style=social)](https://textlint.github.io/) [![wercker status](https://app.wercker.com/status/b98b7501d0ba05f22cda981be6dde314/s/master "wercker status")](https://app.wercker.com/project/bykey/b98b7501d0ba05f22cda981be6dde314)
 
 [textlint](https://github.com/textlint/textlint) rule to follow general style of Japanese novels.
+This rule corresponds to issue numbers on github and markdown.
 
 日本の小説における一般的な作法に従うための textlint ルールです。
+GitHubのIssue番号やMarkdownに対応しています。
 
 ## インストール
 
