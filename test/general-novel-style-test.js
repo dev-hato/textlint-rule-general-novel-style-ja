@@ -8,6 +8,8 @@ tester.run("general-novel-style", rule, {
     valid: [
         "　日本語の小説のテストです。日本語の小説の、テストなんです。",
         "「こんにちは、世界」",
+        "[こんにちは、世界。](https://example.com)",
+        "[こんにちは、世界、](https://example.com)",
         "「これはペンですか？　いや、ペンであるはずがない！」",
         "「…………なん……だと……」",
         "『一体いつから――――ペンであると錯覚していた――？』",
@@ -248,14 +250,14 @@ tester.run("general-novel-style", rule, {
             output: "「こんにちは、世界」",
             errors: [
                 {
-                    message: "句読点(。、)が閉じ括弧の直前に存在しています",
-                    line: 1,
-                    column: 12
-                },
-                {
                     message: "連続した句読点(。、)が使われています",
                     line: 1,
                     column: 10
+                },
+                {
+                    message: "句読点(。、)が閉じ括弧の直前に存在しています",
+                    line: 1,
+                    column: 12
                 }
             ]
         },
